@@ -1,0 +1,27 @@
+GET http://localhost:3001/api/posts
+
+###
+
+GET http://localhost:3001/api/posts/1
+
+###
+
+PUT http://localhost:3001/api/posts/1
+Content-Type: application/json
+
+{
+  "text": "Updated Text"
+}
+###
+
+POST http://localhost:3001/api/posts/
+Content-Type: application/json
+
+{
+  "id": 3,
+  "text": "New Text",
+  "time": 25
+}
+
+###
+DELETE http://localhost:3001/api/posts/2
